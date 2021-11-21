@@ -64,7 +64,7 @@ $.ajax({
                 quizBox.innerHTML += `
                     <hr>
                     <div class="mb-2">
-                        <b>${question}</b>
+                        <b style="color: #008bff">${question}</b>
                     </div>
                 `
                 answers.forEach(answer=>{

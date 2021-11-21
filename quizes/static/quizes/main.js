@@ -19,7 +19,7 @@ modalBtns.forEach(modalBtn=> modalBtn.addEventListener('click', ()=>{
         <div class="text-muted">
             <ul>
                 <li>Складність: <b>${difficulty}</b></li>
-                <li>Кільуість питань: <b>${numQuestions}</b></li>
+                <li>Кількість питань: <b>${numQuestions}</b></li>
                 <li>Прохідний бал: <b>${scoreToPass}%</b></li>
                 <li>Час: <b>${time} min</b></li>
             </ul>

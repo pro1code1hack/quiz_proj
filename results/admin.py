@@ -3,4 +3,7 @@ from .models import Result
 
 # Register your models here.
 
-admin.site.register(Result)
+class ResultAdmin(admin.ModelAdmin):
+    list_display = ('quiz', 'user', 'score',)
+
+admin.site.register(Result, ResultAdmin)

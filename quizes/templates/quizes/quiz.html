@@ -21,9 +21,9 @@
     <div class="col text-right" id="timer-box"></div>
 </div>
 
-<a href="{% url 'quizes:main-view' %}" class="btn btn-danger">Назад</a>
+<a  href="{% url 'quizes:main-view' %}" class="btn btn-danger">Назад</a>
 
-<form id="quiz-form" class="mt-3 mb-3">
+<form  id="quiz-form" class="mt-3 mb-3">
     {% csrf_token %}
     <div id="quiz-box"></div>
     <button type="submit" id="quiz-submit" class=" btn btn-primary mt-3" >Здати</button>
