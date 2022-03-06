@@ -19,7 +19,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import index_main, index_metodichki, index_students_books, index_industrial, index_distance, index_practical
-from django.conf.urls import url
+from django.urls import include, path
 from contact_form import views as contact_views
 
 
@@ -33,7 +33,7 @@ urlpatterns = [
     path('distance/', index_distance),
     path('practical/', index_practical),
     path('hometasks/', include('homework.urls')),  # новое изменение
-    url(r"^", include("users.urls")),           # accounts
+    path(r"^", include("users.urls")),           # accounts
     path('', include('contact_form.urls')),  # новое изменение
 ]
 
